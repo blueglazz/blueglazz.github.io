@@ -28,8 +28,10 @@ nav a:hover {
   text-decoration: underline;
 }
 
-section {
-  margin-top: 2rem;
+section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 footer {
