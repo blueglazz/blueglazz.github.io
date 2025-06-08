@@ -13,11 +13,12 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
-  color: #f2f2f2; /* light text */
+  background-color: rgba(0, 0, 0, 0.7); /* dark translucent overlay */
+  color: #ffffff; /* <-- pure white text */
   line-height: 1.6;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* keeps text legible */
 }
 
 header {
