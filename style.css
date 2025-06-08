@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/texture.jpg'); /* or just 'texture.jpg' if in same folder */
+  background-image: url('images/texture.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,38 +13,18 @@ body {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.7); /* dark translucent overlay */
-  color: #ffffff; /* <-- pure white text */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #ffffff;  /* <- sets text to white */
   line-height: 1.6;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* keeps text legible */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-nav a {
-  margin: 0 1rem;
+a {
+  color: #66ccff;
   text-decoration: none;
-  color: #0066cc;
 }
-
-nav a:hover {
+a:hover {
   text-decoration: underline;
-}
-
-section:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  color: #999;
-  margin-top: 3rem;
 }
