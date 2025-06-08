@@ -1,28 +1,26 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/texture.jpg');
+  background-image: url('images/paper.jpg'); /* or whatever your file name is */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
-  font-family: system-ui, sans-serif;
+  font-family: Georgia, serif;
 }
 
 .content-overlay {
   max-width: 800px;
   margin: auto;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #ffffff;  /* <- sets text to white */
+  background-color: rgba(255, 255, 255, 0.85); /* light, semi-opaque */
+  color: #222222; /* dark text for readability */
   line-height: 1.6;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 a {
-  color: #66ccff;
+  color: #2c5aa0;
   text-decoration: none;
 }
 a:hover {
