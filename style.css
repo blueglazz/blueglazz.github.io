@@ -1,27 +1,81 @@
+/* 1. Global Page Styles */
 body {
   margin: 0;
   padding: 0;
-  background-image: url('images/paper.jpg'); /* or whatever your file name is */
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  font-family: Georgia, serif;
-}
-
-.content-overlay {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  background-color: transparent;  /* ← no white board */
-  color: #222222;  /* Adjust if needed for contrast */
+  /* Replaces paper.jpg with a professional light gray */
+  background-color: #f5f5f5; 
+  /* Keeping Georgia as you had it, but adding a fallback */
+  font-family: Georgia, 'Times New Roman', serif; 
+  color: #333;
   line-height: 1.6;
 }
 
-a {
-  color: #2c5aa0;
-  text-decoration: none;
+/* 2. Layout Container */
+.content-overlay, .main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px; /* Top/Bottom padding, Left/Right padding */
 }
+
+/* 3. The "Block" Design (Applies to Header and Sections) */
+/* This creates the white cards for your publications/info */
+header, section {
+  background-color: #ffffff; /* Pure white background for text areas */
+  padding: 2rem;             /* Space inside the block */
+  margin-bottom: 2rem;       /* Space between blocks */
+  border-radius: 8px;        /* Soft rounded corners */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+  border: 1px solid #e0e0e0; /* Faint border for definition */
+}
+
+/* 4. Typography Tweaks */
+h1 {
+  margin-top: 0;
+  color: #000;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 0;
+  color: #444;
+  border-bottom: 2px solid #f5f5f5;
+  padding-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+/* 5. Links */
+a {
+  color: #2c5aa0; /* Your original blue */
+  text-decoration: none;
+  font-weight: bold;
+}
+
 a:hover {
   text-decoration: underline;
+}
+
+/* 6. Publication/List Styling */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 15px; /* Spacing between publications */
+}
+
+/* Optional: Make the "CV" and "arXiv" links look like buttons */
+nav a {
+  display: inline-block;
+  background-color: #eef2f7;
+  color: #2c5aa0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 10px;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+
+nav a:hover {
+  background-color: #dbe4ef;
+  text-decoration: none;
 }
